@@ -1,9 +1,13 @@
-body{
-  background-image: url(../images/cityBackground.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-position: center;
+.loginContainer{
+  overflow: hidden;
+}
+
+.background{
+    background-image: url(../images/cityBackground.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:100%;
+    height: 750px;
 }
 
 .userInfo{
