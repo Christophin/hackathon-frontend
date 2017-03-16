@@ -4,10 +4,17 @@
   float:right;
   margin-top: 300px;
   text-align: center;
+  background: lightgrey;
+  margin-right: 50px;
+  padding-left: 50px;
+  border-radius: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  opacity: .3;
 
 .login{
   float:right;
-  margin-right: 100px;
+  margin-right: 50px;
   padding-top: 10px;
 }
 
@@ -34,6 +41,12 @@ input{
   margin-bottom: 10px;
   border-radius: 5px;
   border: 1px solid lightgrey;
-  padding-left: 10px;
+  padding-left: 5px;
+  width: 250px;
 }
+}
+
+.userInfo:hover{
+  opacity: 1;
+  transition: all .5s ease-in-out;
 }
