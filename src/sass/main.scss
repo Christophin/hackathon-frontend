@@ -1,16 +1,24 @@
-
+body{
+  background-image: url(../images/cityBackground.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-position: center;
+}
 
 .userInfo{
   float:right;
   margin-top: 300px;
   text-align: center;
-  background: lightgrey;
+  background: #5C7D8B;
   margin-right: 50px;
   padding-left: 50px;
   border-radius: 20px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 10px;
+  padding-bottom: 60px;
   opacity: .3;
+  font-family: 'Baloo Bhaina', cursive;
+  transition: all .5s ease-in-out;
 
 .login{
   float:right;
@@ -21,32 +29,36 @@
 .signUp{
   float:left;
   margin-right: 50px;
-  border-right: 1px solid black;
+  border-right: 1px solid white;
   padding-right: 20px;
-  height: 275px;
+  height: 300px;
   padding-top: 10px;
 }
 
 .loginTitle{
-  margin-bottom:20px;
-  font-size: 20px;
+  font-size: 25px;
+  color:white;
+  font-family: 'Baloo Bhaina', cursive;
 }
 
 .signUpTitle{
-  margin-bottom: 20px;
-  font-size: 20px;
+  font-size: 25px;
+  color:white;
+  font-family: 'Baloo Bhaina', cursive;
 }
 
 input{
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   border-radius: 5px;
   border: 1px solid lightgrey;
   padding-left: 5px;
   width: 250px;
 }
+
+
 }
 
 .userInfo:hover{
-  opacity: 1;
+  opacity: .6;
   transition: all .5s ease-in-out;
 }
