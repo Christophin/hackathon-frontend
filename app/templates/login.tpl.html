@@ -1,38 +1,17 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Cool Project</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/main.css">
-  </head>
-  <body ng-app = "app">
-    <div ui-view>
-
 <div class = "userInfo">
 <form class = "login">
-  <div class = "loginTitle">Log-In to your account </div>
+
   <input type = "text" placeholder = "Email" ng-model = "login.email"/><br/>
-  <input type = "text" placeholder = "Password" ng-model = "login.password"/><br/>
-  <button type="button" name="button">Login</button>
+  <input type = "text" placeholder = "Password" ng-model = "login.password"/>
+
 </form>
+
 <form class = "signUp">
-  <div class = "signUpTitle">Join the club</div>
   <input type = "text" placeholder = "Profile Pic (URL)" ng-model = "signUp.profilePic"/><br/>
   <input type = "text" placeholder = "Background Pic (URL)" ng-model = "signUp.backgroundPic"/><br/>
   <input type = "text" placeholder = "Username (Required)" ng-model = "signUp.username"/><br/>
   <input type = "text" placeholder = "Email (Required)" ng-model = "signUp.email"/><br/>
   <input type = "text" placeholder = "Name Irl" ng-model = "signUp.name"/><br/>
   <input type = "password" placeholder = "Password" ng-model = "signUp.password"/><br/>
-  <button type="button" name="button">Sign Up</button>
 </form>
 </div>
-
-</div>
-
-
-    </div>
-    <script src="js/bundle.js"></script>
-  </body>
-</html>

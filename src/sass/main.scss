@@ -1,0 +1,39 @@
+
+
+.userInfo{
+  float:right;
+  margin-top: 300px;
+  text-align: center;
+
+.login{
+  float:right;
+  margin-right: 100px;
+  padding-top: 10px;
+}
+
+.signUp{
+  float:left;
+  margin-right: 50px;
+  border-right: 1px solid black;
+  padding-right: 20px;
+  height: 275px;
+  padding-top: 10px;
+}
+
+.loginTitle{
+  margin-bottom:20px;
+  font-size: 20px;
+}
+
+.signUpTitle{
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+input{
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+  padding-left: 10px;
+}
+}
