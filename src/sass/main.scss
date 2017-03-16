@@ -10,7 +10,6 @@ body{
   float:right;
   margin-top: 300px;
   text-align: center;
-  background: #5C7D8B;
   margin-right: 50px;
   padding-left: 50px;
   border-radius: 20px;
@@ -19,6 +18,10 @@ body{
   opacity: .3;
   font-family: 'Baloo Bhaina', cursive;
   transition: all .5s ease-in-out;
+  text-shadow: 1px 1px 2px black;
+  box-shadow: 5px 5px 20px black;
+  background: rgba(50, 50, 50, .5);
+
 
 .login{
   float:right;
@@ -55,10 +58,16 @@ input{
   width: 250px;
 }
 
-
+button{
+border-radius: 5px;
+background: black;
+color: white;
+border: 1px solid white;
+opacity: 3;
+}
 }
 
 .userInfo:hover{
-  opacity: .6;
+  opacity: 1;
   transition: all .5s ease-in-out;
 }
