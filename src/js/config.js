@@ -8,10 +8,10 @@ function Config ($stateProvider, $urlRouterProvider) {
         })
         .state('page-not-found', {
             url: '/not-found',
-            template: `<h2>No such page. Haha. You're dumb.</h2>`
+            template: `<h2>Wrong Turn.</h2>`
         });
 
-    $urlRouterProvider.when('', '/home');
+    $urlRouterProvider.when('', '/login');
     $urlRouterProvider.otherwise('/not-found');
 }
 
