@@ -2,27 +2,32 @@
     <div class="logo">
         <i class="fa fa-hand-spock-o" aria-hidden="true"></i>IEW
     </div>
-    <form ng-submit="#!/photo">
+
       <button class = "loginout">Log-Out <i class="fa fa-user-circle-o" aria-hidden="true"></i></button>
       <button class = "loginout">Log-In <i class="fa fa-user-circle" aria-hidden="true"></i></button>
-      <button><i class="fa fa-plus" aria-hidden="true"></i>
-<i class="fa fa-camera-retro" aria-hidden="true"></i>
-</button>
+    <form ng-submit="viewAddPhoto()">
+      <button>
+          <i class="fa fa-plus" aria-hidden="true"></i>
+          <i class="fa fa-camera-retro" aria-hidden="true"></i>
+      </button>
     </form>
 </nav>
 
 <div ui-view></div>
 
-<!-- <div ng-repeat="post in posts"> -->
+
 <div class="post">
-    <div class="whoPosted">~{{post.username}}</div>
-    <div class="picture">{{post.photoUrl}}</div>
-    <div class="description">{{post.username}}: {{post.description}}</div>
-    <div class="commentsContainer">
-        <div ng-repeat="comment in comments">
-            <div class="comments"></div>
+    <div ng-repeat="post in posts">
+        <div class="whoPosted">~{{post.username}}</div>
+        <div class="picture"><img src="{{post.photoUrl}}" /></div>
+        <div class="description">{{post.username}}: {{post.description}}</div>
+        <div class="commentsContainer">
+            <div ng-repeat="comment in comments">
+                <div class="comments"></div>
+            </div>
+            <form ng-submit="viewAddComment()">
+            <button><i class="fa fa-plus" aria-hidden="true"></i>  <i class="fa fa-commenting-o" aria-hidden="true"></i></button>
+            </form>
         </div>
-        <button><i class="fa fa-plus" aria-hidden="true"></i>  <i class="fa fa-commenting-o" aria-hidden="true"></i></button>
     </div>
 </div>
-<!-- </div> -->
