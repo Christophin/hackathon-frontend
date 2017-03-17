@@ -1,6 +1,9 @@
 body{
-  background:#003366;
-}
+  background-image:
+      linear-gradient(
+        to right,
+        #4CA1AF, #C4E0E5
+      );}
 
 .loginContainer{
   overflow: hidden;
@@ -85,9 +88,11 @@ nav{
     width:100%;
     padding-top: 10px;
     font-family: 'Baloo Bhaina', cursive;
-    background: #003366;
-    color:white;
-
+    background-image:
+        linear-gradient(
+          to right,
+          #4CA1AF, #C4E0E5
+        );    color:white;
 
     div{
       float:left;
@@ -98,7 +103,7 @@ nav{
     button{
       float:right;
       margin-right: 20px;
-      color:#003366;
+      color:pink;
       background: white;
       border: 1px solid white;
       margin-top: 15px;
@@ -111,7 +116,7 @@ nav{
     }
 
     button:hover{
-    background:#003366;
+    background:pink;
     color:white;
     border: 1px solid white;
   }
@@ -119,7 +124,7 @@ nav{
     .logo{
       font-size: 35px;
       text-shadow: 1px 1px 3px black;
-      color:#white;
+      color:white;
       padding-left: 85px;
       position: fixed;
     }
@@ -173,7 +178,6 @@ nav{
 .addPhotoContainer{
 height: 300px;
 width: 600px;
-border: 1px solid black;
 margin: auto;
 margin-top: 20px;
 
@@ -189,35 +193,61 @@ margin-top: 20px;
 
 .addPhotoUrl{
   width: 450px;
-  height: 250px;
+  height: 350px;
   border: 1px solid black;
   float: right;
   margin-right: 20px;
   margin-top: 20px;
+  border-radius: 5px;
+  text-shadow: 1px 1px 3px black;
 
   input{
     width: 300px;
     height: 30px;
-    margin-left: 20px;
-    margin-top: 150px;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
+    margin-top: 25px;
+    margin-left: 70px;
+    border-radius: 10px;
     border: 1px solid white;
     font-family: 'Baloo Bhaina', cursive;
     padding-left: 10px;
     color: black;
-    float: left;
+    box-shadow: 1px 1px 2px black;
   }
 
   button{
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
     border: 1px solid white;
     height: 34px;
     width: 100px;
     font-family: 'Baloo Bhaina', cursive;
-    float: left;
-    margin-top: 150px;
+    background: white;
+    color: pink;
+    margin-left:175px;
+    margin-top: 10px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px black;
+  }
+
+  button:hover{
+    background: pink;
+    color:white;
+  }
+
+  .addPhotoTitle{
+    text-align: center;
+    margin-top: 25px;
+    font-family: 'Baloo Bhaina', cursive;
+    font-size: 25px;
+    color:white;
+  }
+
+  textarea{
+    font-family: 'Baloo Bhaina', cursive;
+    margin-left: 50px;
+    margin-top: 20px;
+    border-radius: 10px;
+    padding-left: 10px;
+    border: 1px solid white;
+    box-shadow: 1px 1px 2px black;
   }
 }
 }
