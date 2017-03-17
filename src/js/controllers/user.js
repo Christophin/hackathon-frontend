@@ -15,7 +15,7 @@ function UserController ($scope, $http, SERVER, $cookies, $state) {
         console.log(data);
       $http.post(`${SERVER}/login`, data).then(resp =>  {
           $cookies.put('access-token', resp.data.token);
-          console.log()
+          console.log(resp.data.token)
       })
           .catch(error => {
               console.log(error);
