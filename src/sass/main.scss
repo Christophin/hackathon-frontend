@@ -168,5 +168,56 @@ nav{
       padding-top: 10px;
       background:white;
     }
+}
 
+.addPhotoContainer{
+height: 300px;
+width: 600px;
+border: 1px solid black;
+margin: auto;
+margin-top: 20px;
+
+.userImage{
+  height: 75px;
+  width: 75px;
+  border: 1px solid black;
+  margin-left: 20px;
+  margin-top: 20px;
+  float:left;
+  border-radius: 100px;
+}
+
+.addPhotoUrl{
+  width: 450px;
+  height: 250px;
+  border: 1px solid black;
+  float: right;
+  margin-right: 20px;
+  margin-top: 20px;
+
+  input{
+    width: 300px;
+    height: 30px;
+    margin-left: 20px;
+    margin-top: 150px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border: 1px solid white;
+    font-family: 'Baloo Bhaina', cursive;
+    padding-left: 10px;
+    color: black;
+    float: left;
+  }
+
+  button{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: 1px solid white;
+    height: 34px;
+    width: 100px;
+    font-family: 'Baloo Bhaina', cursive;
+    float: left;
+    margin-top: 150px;
+  }
+}
 }
