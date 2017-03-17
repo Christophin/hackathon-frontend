@@ -128,6 +128,10 @@ nav{
       padding-left: 85px;
       position: fixed;
     }
+
+    .loginout{
+      margin-right: 10px;
+    }
 }
 
 .post{
@@ -201,6 +205,35 @@ nav{
         background: white;
         border: 1px solid pink;
       }
+    }
+  }
+
+  .addCommentsContainer{
+    width:600px;
+    height:400px;
+    margin:auto;
+    text-align: center;
+
+    .addCommentsContainerTitle{
+      color:white;
+      font-family: 'Baloo Bhaina', cursive;
+      font-size: 25px;
+      margin-top: 25px;
+    }
+
+    textarea{
+      margin: auto;
+      margin-top: 20px;
+      font-family: 'Baloo Bhaina', cursive;
+      border-radius: 10px;
+      border: 1px solid white;
+    }
+    button{
+      width: 100px;
+      text-align: center;
+      display: block;
+      margin-left: 250px;
+      margin-top: 40px;
     }
   }
 
