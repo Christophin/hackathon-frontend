@@ -1,11 +1,4 @@
-function CommentController ($scope, $http, SERVER, $cookies, $state) {
-    $scope.comments = [];
-    $scope.getComments = () =>  {
-        $http.get(`${SERVER}/photo/${state.params.id}/comments`)
-            .then(resp =>   {
-                $state.comments = resp.data;
-            })
-    };
+function CommentController ($scope, $http, SERVER, $state) {
     $scope.addComment = (data)  =>  {
         $http.post(`${SERVER}/photo/${$state.params.id}/comment`, data)
             .then(resp =>   {
@@ -13,3 +6,7 @@ function CommentController ($scope, $http, SERVER, $cookies, $state) {
             })
     }
 }
+
+CommentController.$inject = ['$scope', '$http', 'SERVER', '$state' ];
+
+export default CommentController;
