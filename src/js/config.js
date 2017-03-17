@@ -18,7 +18,13 @@ function Config ($stateProvider, $urlRouterProvider) {
         })
         .state('home.addPhoto', {
             url: '/addPhoto',
-            templateUrl: 'templates/addPhoto.tpl.html'
+            templateUrl: 'templates/addPhoto.tpl.html',
+            controller: 'PhotoController'
+        })
+        .state('home.addComment',   {
+            url: '/addComment',
+            templateUrl: 'templates/addComment.tpl.html',
+            controller: 'CommentController'
         })
         .state('page-not-found', {
             url: '/not-found',
