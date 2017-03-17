@@ -1,6 +1,6 @@
 import SERVER from '../server'
 
-function PhotoController ($scope, $http, SERVER, $cookies, $state)  {
+function PhotoController ($scope, $http, SERVER, $state)  {
     $scope.photos = [];
     $scope.photo = [];
     $scope.getPhotos = ()  => {
@@ -18,11 +18,14 @@ function PhotoController ($scope, $http, SERVER, $cookies, $state)  {
     };
     $scope.addPhoto = (data)    =>  {
         $http.post(`${SERVER}/photos`, data).then(resp =>   {
-            $state.go(`/photo/${resp.data.id}`)
+            $state.go(`photo`)
         })
+    };
+    $scope.changeState = () => {
+        $state.go('home.addPhoto');
     }
 }
 
-PhotoController.$inject = ['$scope', '$http', 'SERVER', '$cookies', '$state' ];
+PhotoController.$inject = ['$scope', '$http', 'SERVER', '$state' ];
 
 export default PhotoController;

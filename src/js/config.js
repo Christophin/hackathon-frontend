@@ -11,7 +11,7 @@ function Config ($stateProvider, $urlRouterProvider) {
             templateUrl: 'templates/login.tpl.html',
             controller: 'UserController'
         })
-        .state('home.photo', {
+        .state('home-photo', {
             url: '/photo:id',
             templateUrl: 'templates/photo.tpl.html',
             controller: 'PhotoController'
@@ -25,7 +25,7 @@ function Config ($stateProvider, $urlRouterProvider) {
             template: `<h2>Wrong Turn.</h2>`
         });
 
-    $urlRouterProvider.when('', '/login');
+    $urlRouterProvider.when('', '/home');
     $urlRouterProvider.otherwise('/not-found');
 }
 
