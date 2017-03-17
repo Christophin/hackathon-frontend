@@ -184,11 +184,7 @@ nav{
     font-size: 20px;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
-    background-image:
-    linear-gradient(
-      to right,
-      tan, lightgrey
-    );    color:white;
+    color:white;
     color:white;
   }
 
@@ -212,6 +208,8 @@ nav{
       height:100px;
       padding-left: 10px;
       padding-top: 10px;
+      font-family: 'Baloo Bhaina', cursive;
+
 
     .comments{
       overflow:auto;
@@ -219,7 +217,7 @@ nav{
 
     button{
       float:right;
-      margin-top: 60px;
+      margin-top: 50px;
       margin-right: 20px;
       color:white;
       background: pink;
