@@ -11,15 +11,14 @@ function Config ($stateProvider, $urlRouterProvider) {
             templateUrl: 'templates/login.tpl.html',
             controller: 'UserController'
         })
-        .state('photo', {
+        .state('home.photo', {
             url: '/photo:id',
             templateUrl: 'templates/photo.tpl.html',
             controller: 'PhotoController'
         })
-        .state('photo.comment', {
-            url: '/photo:id',
-            templeteUrl: 'templates.comment.tpl.html',
-            controller: 'CommentController'
+        .state('home.addPhoto', {
+            url: '/addPhoto',
+            templateUrl: 'templates/addPhoto.tpl.html'
         })
         .state('page-not-found', {
             url: '/not-found',
