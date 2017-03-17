@@ -1,5 +1,5 @@
 body{
-  background:#07899F;
+  background:#003366;
 }
 
 .loginContainer{
@@ -85,7 +85,7 @@ nav{
     width:100%;
     padding-top: 10px;
     font-family: 'Baloo Bhaina', cursive;
-    background: #07899F;
+    background: #003366;
     color:white;
 
 
@@ -98,7 +98,7 @@ nav{
     button{
       float:right;
       margin-right: 20px;
-      color:#07899F;
+      color:#003366;
       background: white;
       border: 1px solid white;
       margin-top: 15px;
@@ -111,8 +111,9 @@ nav{
     }
 
     button:hover{
-    background:white;
-    color:black;
+    background:#003366;
+    color:white;
+    border: 1px solid white;
   }
 
     .logo{
@@ -140,7 +141,7 @@ nav{
     padding-top: 15px;
     font-family: 'Baloo Bhaina', cursive;
     font-size: 20px;
-    background: #07899F;
+    background: #003366;
     color:white;
   }
 
