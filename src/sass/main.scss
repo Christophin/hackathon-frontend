@@ -351,8 +351,8 @@ font-family: 'Lato', sans-serif;
 
 
 .addPhotoContainer{
-height: 350px;
-width: 600px;
+height: 50%;
+width: 38%;
 margin: auto;
 margin-top: 20px;
 position: fixed;
@@ -360,8 +360,9 @@ text-shadow: 1px 1px 2px black;
 box-shadow: 5px 5px 20px black;
 background: rgba(50, 50, 50, .5);
 border-radius: 5px;
-left:300px;
+left:30%;
 z-index: 1;
+
 
 // .userImage{
 //   height: 75px;
@@ -388,7 +389,7 @@ z-index: 1;
     margin-left: 70px;
     border-radius: 10px;
     border: 1px solid white;
-    font-family: 'Baloo Bhaina', cursive;
+    font-family: 'Lato', sans-serif;
     padding-left: 10px;
     color: black;
   }
@@ -397,7 +398,7 @@ z-index: 1;
     border: 1px solid white;
     height: 34px;
     width: 100px;
-    font-family: 'Baloo Bhaina', cursive;
+    font-family: 'Lato', sans-serif;
     background: white;
     color: grey;
     margin-left:175px;
@@ -419,7 +420,7 @@ z-index: 1;
   }
 
   textarea{
-    font-family: 'Baloo Bhaina', cursive;
+    font-family: 'Lato', sans-serif;
     margin-left: 50px;
     margin-top: 20px;
     border-radius: 10px;
