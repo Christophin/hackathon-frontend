@@ -1,9 +1,15 @@
-<form ng-submit="addComment(comment)">
-  <div class="addCommentsContainer">
-    <div class="addCommentsContainerTitle">
-      Say something!
-    </div>
-    <textarea name="name" rows="5" cols="50" ng-model="comment.content"></textarea>
-    <button>POST! <i class="fa fa-thumb-tack" aria-hidden="true"></i></button>
+<div class="modal">
+  <div class="modal-background" ng-click="killModal()"></div>
+  <div class="modal-content">
+    <form ng-submit="addComment(comment)" id="addComment">
+      <div class="addCommentsContainer">
+        <div class="addCommentsContainerTitle">
+          Say something!
+        </div>
+        <textarea name="name" rows="5" cols="50" ng-model="comment.content"></textarea>
+        <button>POST! <i class="fa fa-thumb-tack" aria-hidden="true"></i></button>
+      </div>
+    </form>
   </div>
-</form>
+  <button class="modal-close" ng-click="killModal()"></button>
+</div>
