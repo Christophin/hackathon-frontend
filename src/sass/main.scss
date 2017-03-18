@@ -2,12 +2,12 @@
   font-family: 'Lato', sans-serif;
 }
 
-#xButton{
+#xButtonPhotos{
     button{
     background: white;
     color:black;
-    height: 10%;
-    width: 10%;
+    height: 8%;
+    width: 9%;
     border-radius: 150px;
     position: absolute;
     left:50%;
@@ -15,6 +15,29 @@
     padding-bottom: 30px;
     opacity: .3;
     font-size: 100%;
+    border: 1px solid white;
+  }
+
+  button:hover{
+    color:red;
+    opacity: 1;
+    border: 1px solid red;
+  }
+}
+
+#xButtonComments{
+  button{
+    position: absolute;
+    height:5%;
+    width:7%;
+    padding-bottom: 30px;
+    border-radius: 150px;
+    font-size: 100%;
+    bottom:90%;
+    left:90%;
+    color:black;
+    background: white;
+    opacity: .3;
     border: 1px solid white;
   }
 
@@ -293,20 +316,6 @@ button:hover{
       height:10px;
       margin-bottom: 20px;
       border:1px solid white;
-      }
-
-      .commentsContainer:hover{
-        height:100%;
-        transition: all 1s ease-in-out;
-
-
-    .comments{
-      overflow:hidden;
-    }
-
-    .comments:hover{
-      height:100%;
-    }
 
     button{
       float:right;
@@ -328,11 +337,18 @@ button:hover{
     }
   }
 
+  .comments{
+    height: 90%;
+    width: 80%;
+    border: 1px solid white;
+    margin: auto;
+  }
+
   .addCommentsContainer {
-    width: 500px;
+    width: 50%;
     position: fixed;
     text-align: center;
-    left: 350px;
+    left: 25%;
     padding-bottom: 10px;
     text-shadow: 1px 1px 2px black;
     box-shadow: 5px 5px 20px black;
@@ -340,9 +356,11 @@ button:hover{
     border-radius: 10px;
     transition: all 3s ease-in-out;
     z-index: 10;
+    margin-top: 1.5%;
+    height:80%;
 
     input{
-      padding-left: 10px;
+      padding-left: 3%;
       border-top-right-radius: 0px;
       border-bottom-right-radius: 0px;
       border:1px solid black;
@@ -362,6 +380,7 @@ button:hover{
       font-family: 'Baloo Bhaina', cursive;
       font-size: 25px;
       margin-top: 10px;
+      padding-top: 30px;
     }
 
     textarea{
@@ -389,7 +408,7 @@ button:hover{
   }
   .addCommentButton:hover{
     background:black;
-    color:grey;
+    color:lightgreen;
   }
 
 

@@ -4,18 +4,22 @@
   <div class="modal-content">
     <form ng-submit="addComment(comment)">
       <div class="addCommentsContainer">
+        <div id = "xButtonComments">
+        <button class="modal-close" ng-click="killModal()"><i class="fa fa-times" aria-hidden="true"></i></button>
+      </div>
         <div class="addCommentsContainerTitle">
           Comments
         </div>
         <div class="commentsContainer">
-          <div ng-repeat="comment in post.Comments">
+          <!-- <div ng-repeat="comment in post.Comments"> -->
             <div class="comments">{{comment.username}}: {{ comment.content }}</div>
-          </div>
-        </div>
-        <input type="text" placeholder="Say something!" ng-model="comment.content">
+          <!-- </div> -->
+          <div class = "postCommentArea">
+        <input type="text" placeholder="Say something!" ng-model="comment.content"/>
         <button>POST! <i class="fa fa-thumb-tack" aria-hidden="true"></i></button>
+      </div>
+        </div>
       </div>
     </form>
   </div>
-  <button class="modal-close" ng-click="killModal()"></button>
 </div>
