@@ -3,7 +3,7 @@ function CommentController ($scope, $http, SERVER, $state) {
         $http.post(`${SERVER}/photo/${$state.params.id}/comment`, data)
             .then(resp =>   {
                 console.log(resp);
-                $state.go('home.photos')
+                $state.go('home')
             })
     }
 }

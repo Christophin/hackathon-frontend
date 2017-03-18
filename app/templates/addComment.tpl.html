@@ -1,7 +1,9 @@
-<div class="addCommentsContainer">
-  <div class="addCommentsContainerTitle">
-    Say something!
+<form ng-submit="addComment(comment)">
+  <div class="addCommentsContainer">
+    <div class="addCommentsContainerTitle">
+      Say something!
+    </div>
+    <textarea name="name" rows="5" cols="50" ng-model="comment.content"></textarea>
+    <button>POST!</button>
   </div>
-  <textarea name="name" rows="5" cols="50"></textarea>
-  <button>POST!</button>
-</div>
+</form>
