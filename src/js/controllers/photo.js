@@ -18,15 +18,15 @@ function PhotoController ($scope, $http, SERVER, $state)  {
     $scope.addPhoto = (data)    =>  {
         console.log(data);
         $http.post(`${SERVER}/photos`, data).then(resp =>   {
-            $state.go(`photo`)
+            $state.go(`home`)
         })
     };
     $scope.viewAddPhoto = () => {
         $state.go('home.addPhoto');
     };
-    $scope.viewAddComment = ()  =>  {
-        $state.go('home.addComment');
-    };
+    $scope.addComment = (data)  =>  {
+        $http.post(`${SERVER}/photo/${$state.params.id}/comment`)
+    }
 }
 
 PhotoController.$inject = ['$scope', '$http', 'SERVER', '$state' ];
