@@ -13,7 +13,6 @@ function PhotoController ($scope, $http, SERVER, $state, $rootScope, $cookies)  
             $scope.posts = resp.data;
             $state.go()
         })
-
     };
     $scope.addPhoto = (data)    =>  {
         console.log(data);
@@ -29,6 +28,9 @@ function PhotoController ($scope, $http, SERVER, $state, $rootScope, $cookies)  
     };
     $scope.killModal = function () {
         $state.go('home');
+    };
+    $scope.addLike = (data) =>  {
+
     };
     $scope.logOut = () => {
         $rootScope.loggedIn = false;
