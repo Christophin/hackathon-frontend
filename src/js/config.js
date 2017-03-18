@@ -22,7 +22,7 @@ function Config ($stateProvider, $urlRouterProvider) {
             controller: 'CommentController'
         })
         .state('profile',  {
-          url: '/:id/profile',
+          url: '/profile/:id',
           templateUrl: 'templates/profile.tpl.html',
           controller: 'UserController'
         })
