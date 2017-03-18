@@ -27,8 +27,8 @@
           <span class = "description">{{post.description}}</span>
         </div>
         <div class="commentsContainer">
-            <div ng-repeat="comment in comments">
-                <div class="comments"></div>
+            <div ng-repeat="comment in post.Comments">
+                <div class="comments">{{comment.username}}: {{ comment.content }}</div>
             </div>
             <a href="#!/home/{{ post.id }}/comment">
                 <button>
