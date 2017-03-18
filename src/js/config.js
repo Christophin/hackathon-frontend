@@ -11,25 +11,20 @@ function Config ($stateProvider, $urlRouterProvider) {
             templateUrl: 'templates/login.tpl.html',
             controller: 'UserController'
         })
-        .state('home-photo', {
-            url: '/photo:id',
-            templateUrl: 'templates/photo.tpl.html',
-            controller: 'PhotoController'
-        })
         .state('home.addPhoto', {
             url: '/addPhoto',
             templateUrl: 'templates/addPhoto.tpl.html',
             controller: 'PhotoController'
         })
         .state('home.addComment',   {
-            url: '/addComment',
+            url: '/:id/comment',
             templateUrl: 'templates/addComment.tpl.html',
             controller: 'CommentController'
-        })
-        .state('page-not-found', {
-            url: '/not-found',
-            template: `<h2>Wrong Turn.</h2>`
         });
+        // .state('page-not-found', {
+        //     url: '/not-found',
+        //     template: `<h2>Wrong Turn.</h2>`
+        // });
 
     $urlRouterProvider.when('', '/home');
     $urlRouterProvider.otherwise('/not-found');
