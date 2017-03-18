@@ -20,11 +20,11 @@ function Config ($stateProvider, $urlRouterProvider) {
             url: '/:id/comment',
             templateUrl: 'templates/addComment.tpl.html',
             controller: 'CommentController'
+        })
+        .state('page-not-found', {
+            url: '/not-found',
+            template: `<h2>Wrong Turn.</h2>`
         });
-        // .state('page-not-found', {
-        //     url: '/not-found',
-        //     template: `<h2>Wrong Turn.</h2>`
-        // });
 
     $urlRouterProvider.when('', '/home');
     $urlRouterProvider.otherwise('/not-found');

@@ -1,6 +1,6 @@
 import SERVER from '../server'
 
-function PhotoController ($scope, $http, SERVER, $state)  {
+function PhotoController ($scope, $http, SERVER, $state, $rootScope, $cookies)  {
     $scope.posts = [];
     function init() {
         $http.get(`${SERVER}/photos`).then(resp => {
@@ -26,9 +26,18 @@ function PhotoController ($scope, $http, SERVER, $state)  {
     };
     $scope.addComment = (data)  =>  {
         $http.post(`${SERVER}/photo/${$state.params.id}/comment`)
+    };
+    $scope.logOut = () => {
+        $rootScope.loggedIn = false;
+        $cookies.remove('access-token');
+        $http.defaults.headers.common['access-token'] = null;
+        $state.go('login');
+    };
+    $scope.logIn =  ()  =>  {
+        $state.go('login')
     }
 }
 
-PhotoController.$inject = ['$scope', '$http', 'SERVER', '$state' ];
+PhotoController.$inject = ['$scope', '$http', 'SERVER', '$state', '$rootScope', '$cookies' ];
 
 export default PhotoController;
