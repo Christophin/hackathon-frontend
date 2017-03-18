@@ -10,11 +10,8 @@
 }
 
 body{
-  background-image:
-      linear-gradient(
-        to top,
-        #4CA1AF, #C4E0E5
-      );}
+  background:black;
+}
 
 .loginContainer{
   overflow: hidden;
@@ -121,55 +118,31 @@ opacity: 3;
   transition: all .5s ease-in-out;
 }
 
-nav{
-    height: 75px;
-    width:100%;
-    padding-top: 10px;
-    font-family: 'Baloo Bhaina', cursive;
-
-    div{
-      float:left;
-      margin-left: 20px;
-      padding-bottom: 20px;
-    }
-
-    button{
-      float:right;
-      color:lightgreen;
-      margin-top: 15px;
-      margin-right: 15px;
-      text-align: center;
-      border: lightgreen;
-      background: white;
-      font-size: 25px;
-    }
-
-    button:hover{
-    background:lightgreen;
-    color:white;
-  }
+.top{
+    background:black;
 
     .logo{
-      font-size: 25px;
-      text-shadow: 1px 1px 3px black;
+      text-align:center;
+      font-size: 40px;
       color:white;
-      padding-left: 85px;
-      position: fixed;
-      left:-90px;
-      font-family: 'Baloo Bhaina', cursive;
+      font-family: 'Lato', sans-serif;
+      width:200px;
+      margin:auto;
+      margin-top: 30px;
+      margin-bottom: 10px;
     }
 
     .loginout{
-      margin-right: 5px;
-      font-size: 10px;
-      background: lightgreen;
-      color:white;
+      float:right;
+      margin-top: 1%;
+      margin-right: 2.5%;
     }
+  }
 
-    .loginout:hover{
-      background:white;
-      color:lightgreen;
-    }
+.addAPhoto{
+  position: fixed;
+  top:15%;
+  right:3%;
 }
 
 .post{
@@ -177,7 +150,7 @@ nav{
   height: 100%;
   margin: auto;
   margin-top: 30px;
-  background: white;
+  background: black;
   float: left;
   margin-left: 65px;
   margin-bottom: 40px;
@@ -193,6 +166,7 @@ nav{
     padding-left: 10px;
     margin-top: 5px;
     float: left;
+    color:white;
 
     b{
       float:left;
@@ -219,13 +193,14 @@ nav{
     }
 
     .description{
-      background:white;
+      background:black;
       font-family: 'Lato', sans-serif;
       float: left;
       margin-right: 300px;
       font-size: 14px;
       margin-top: 5px;
       overflow: auto;
+      color:white;
     }
 
 
@@ -233,10 +208,22 @@ nav{
       width:98.6%;
       padding-left: 10px;
       padding-top: 10px;
+      overflow:auto;
+      transition: all 1s ease-in-out;
+      height:10px;
+      }
+
+      .commentsContainer:hover{
+        height:100%;
+        transition: all 1s ease-in-out;
 
 
     .comments{
-      overflow:auto;
+      overflow:hidden;
+    }
+
+    .comments:hover{
+      height:100%;
     }
 
     button{
@@ -246,9 +233,9 @@ nav{
       color:white;
       background: lightgreen;
       border: 1px solid lightgreen;
-      border-radius: 10px;
-      padding-left: 10px;
       padding-right: 10px;
+      border-top-left-radius: 0px;
+      border-bottom-left-radius: 0px;
       }
 
       button:hover{
@@ -271,14 +258,27 @@ nav{
     border-radius: 10px;
     transition: all 3s ease-in-out;
 
+    input{
+      padding-left: 10px;
+      border-top-right-radius: 0px;
+      border-bottom-right-radius: 0px;
+      border:1px solid black;
+    }
 
-
+    button{
+      border-top-left-radius: 0px;
+      border-bottom-left-radius: 0px;
+      margin-left: -3px;
+      margin-top: 200px;
+      height:22px;
+      border: 1px solid black;
+    }
 
     .addCommentsContainerTitle{
       color:white;
       font-family: 'Baloo Bhaina', cursive;
       font-size: 25px;
-      margin-top: 25px;
+      margin-top: 10px;
     }
 
     textarea{
@@ -288,22 +288,26 @@ nav{
       border-radius: 10px;
       border: 1px solid white;
     }
-    button{
-      width: 100px;
-      text-align: center;
-      display: block;
-      margin-top: 50px;
-      font-family: 'Baloo Bhaina', cursive;
-      background: lightgreen;
-      border: 1px solid lightgreen;
-      padding-top: 5px;
-      margin: auto;
-    }
-    button:hover{
-      background:white;
-      color:lightgreen;
-    }
 }
+
+.addCommentButton{
+    width: 26px;
+    height:20px;
+    text-align: center;
+    font-family: 'Baloo Bhaina', cursive;
+    float:right;
+    padding-bottom: 30px;
+    background: white;
+    margin-right:15px;
+    color:white;
+    background: black;
+    border: 1px solid black;
+  }
+  .addCommentButton:hover{
+    background:black;
+    color:lightgreen;
+  }
+
 
 .addPhotoContainer{
 height: 350px;
