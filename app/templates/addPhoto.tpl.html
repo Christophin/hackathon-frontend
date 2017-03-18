@@ -1,11 +1,17 @@
-<div class = "addPhotoContainer">
-  <div class = "userImage"><img src=""></div>
-  <div class = "addPhotoUrl">
-    <form ng-submit="addPhoto(photo)">
-      <div class = "addPhotoTitle">POST SOMETHING AWESOME!</div>
-      <input type="text" placeholder="Photo URL" ng-model="photo.photoUrl">
-      <textarea name="name" rows="3" cols="40" placeholder="Photo description" ng-model="photo.description"></textarea>
-      <button>Post! <i class="fa fa-thumb-tack" aria-hidden="true"></i></button>
-    </form>
+<div class="modal">
+  <div class="modal-background" ng-click="killModal()"></div>
+  <div class="modal-content">
+    <div class = "addPhotoContainer">
+      <div class = "userImage"><img src=""></div>
+      <div class = "addPhotoUrl">
+        <form ng-submit="addPhoto(photo)">
+          <div class = "addPhotoTitle">POST SOMETHING AWESOME!</div>
+          <input type="text" placeholder="Photo URL" ng-model="photo.photoUrl">
+          <textarea name="name" rows="3" cols="40" placeholder="Photo description" ng-model="photo.description"></textarea>
+          <button>Post! <i class="fa fa-thumb-tack" aria-hidden="true"></i></button>
+        </form>
+      </div>
+    </div>
   </div>
+  <button class="modal-close" ng-click="killModal()"></button>
 </div>
