@@ -1,7 +1,7 @@
 import SERVER from '../server'
 
 function UserController ($scope, $http, SERVER, $cookies, $state) {
-
+    $scope.currentUser = [];
     $scope.signUp = (data) =>   {
         console.log(data);
         $http.post(`${SERVER}/users`, data).then(resp =>    {
@@ -25,7 +25,8 @@ function UserController ($scope, $http, SERVER, $cookies, $state) {
     },
     $scope.getUser = (data) =>  {
         $http.post(`${SERVER}/user/${$state.params.id}`, data).then(resp    =>  {
-
+            $scope.currentUser = resp.data;
+            console.log(resp.data);
         })
     }
 }
