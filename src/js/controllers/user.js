@@ -22,6 +22,11 @@ function UserController ($scope, $http, SERVER, $cookies, $state) {
           .catch(error => {
               console.log(error);
           })
+    },
+    $scope.getUser = (data) =>  {
+        $http.post(`${SERVER}/user/${$state.params.id}`, data).then(resp    =>  {
+
+        })
     }
 }
 

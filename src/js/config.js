@@ -21,6 +21,11 @@ function Config ($stateProvider, $urlRouterProvider) {
             templateUrl: 'templates/addComment.tpl.html',
             controller: 'CommentController'
         })
+        .state('profile',  {
+          url: '/profile/:id',
+          templateUrl: 'templates/profile.tpl.html',
+          controller: 'UserController'
+        })
         .state('page-not-found', {
             url: '/not-found',
             template: `<h2>Wrong Turn.</h2>`
