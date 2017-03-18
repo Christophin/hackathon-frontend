@@ -6,7 +6,7 @@
     <button class = "loginout">Log-In <i class="fa fa-user-circle" aria-hidden="true"></i></button>
   </form>
   <div class = "logo">
-  <i class="fa fa-hand-spock-o" aria-hidden="true"></i>iew
+  <a href = "#!/home"><i class="fa fa-hand-spock-o" aria-hidden="true"></a></i>iew
 </div>
 </nav>
     <form class = "addAPhoto" ng-submit="viewAddPhoto()">
@@ -23,20 +23,15 @@
 <div ng-repeat="post in posts">
   <div class= "userPhotoContainer">
     <div class="userPhoto">
-      <img src="{{post.profilePic}}"/>
+      <img src="{{post.User.profilePic}}"/>
     </div>
   </div>
     <div class="post">
         <div class="picture"><img src="{{post.photoUrl}}" /></div>
         <div class="whoPosted">
-          <b>@{{post.username}}:</b>
+          <b>@{{post.User.username}}:</b>
           <span class = "description">{{post.description}}</span>
         </div>
-         <!-- <div class="commentsContainer">
-            <div ng-repeat="comment in post.Comments">
-                <div class="comments">{{comment.username}}: {{ comment.content }}</div>
-            </div>
-        </div>  -->
         <a href="#!/home/{{ post.id }}/comment">
             <button class= "addCommentButton">
               <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
@@ -45,3 +40,9 @@
     </div>
 </div>
 </div>
+
+
+<!-- <div class = "profileHeader">
+  <div class = "profileAvitar"></div>
+  <div class = "profileUserName">@TylerLaurenceau879</div>
+</div> -->
