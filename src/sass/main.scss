@@ -3,9 +3,8 @@
 }
 
 .postContainer{
-  width: 1200px;
+  width: 90%;
   margin: auto;
-  border:1px solid white;
   font-family: 'Baloo Bhaina', cursive;
 }
 
@@ -22,11 +21,12 @@ body{
     color:white;
     padding-top: 100px;
     margin-bottom: 70px;
+    text-shadow: 1px 1px 2px black;
   }
 }
 
 .background{
-    background-image: url(../images/beach.jpg);
+    background-image: url(../images/cityBackground.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     width:100%;
@@ -123,13 +123,14 @@ opacity: 3;
 
     .logo{
       text-align:center;
-      font-size: 40px;
+      font-size: 250%;
       color:white;
       font-family: 'Lato', sans-serif;
-      width:200px;
+      width:50%;
       margin:auto;
       margin-top: 30px;
       margin-bottom: 10px;
+      width: 10%
     }
 
     .loginout{
@@ -139,30 +140,59 @@ opacity: 3;
     }
   }
 
+  .logo:hover{
+
+    i{
+      color:yellow;
+    }
+
+  }
+
+    .loginout:hover{
+      color:yellow;
+      border: 1px solid yellow;
+    }
+
 .addAPhoto{
   position: fixed;
   top:15%;
   right:3%;
+  width: 4%;
+}
+
+.addAPhoto:hover{
+
+  button{
+    color:yellow;
+    border:1px solid yellow;
+  }
 }
 
 .post{
-  width: 500px;
+  width: 80%;
   height: 100%;
   margin: auto;
   margin-top: 30px;
   background: black;
-  float: left;
-  margin-left: 65px;
-  margin-bottom: 40px;
+  margin-left: 10%;
+  margin-bottom: 80px;
   padding-bottom: 10px;
   border-radius: 5px;
+  position: relative;
 
+  .userPhoto{
+    height: 13%;
+    width: 13%;
+    border:1px solid white;
+    position: absolute;
+    left:-14%;
+    top: 4%;
+  }
 
   .whoPosted{
     width:100%;
     text-align: center;
     font-family: 'Lato', sans-serif;
-    font-size: 18px;
     padding-left: 10px;
     margin-top: 5px;
     float: left;
@@ -171,7 +201,7 @@ opacity: 3;
     b{
       float:left;
       margin-right: 10px;
-      font-size: 18px;
+      font-size: 100%;
     }
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
@@ -179,9 +209,9 @@ opacity: 3;
 
     .picture{
       width: 100%;
-      height: 300px;
+      height: 100%;
       text-align: center;
-      background: white;
+      background: black;
       border-top-left-radius: 5px;
       border-top-right-radius: 5px;
       img {
@@ -196,8 +226,7 @@ opacity: 3;
       background:black;
       font-family: 'Lato', sans-serif;
       float: left;
-      margin-right: 300px;
-      font-size: 14px;
+      font-size: 70%;
       margin-top: 5px;
       overflow: auto;
       color:white;
@@ -211,6 +240,8 @@ opacity: 3;
       overflow:auto;
       transition: all 1s ease-in-out;
       height:10px;
+      margin-bottom: 20px;
+      border:1px solid white;
       }
 
       .commentsContainer:hover{
@@ -231,17 +262,17 @@ opacity: 3;
       margin-top: 45px;
       margin-right: 20px;
       color:white;
-      background: lightgreen;
-      border: 1px solid lightgreen;
+      background: yellow;
+      border: 1px solid yellow;
       padding-right: 10px;
       border-top-left-radius: 0px;
       border-bottom-left-radius: 0px;
       }
 
       button:hover{
-        color:lightgreen;
+        color:yellow;
         background: white;
-        border: 1px solid lightgreen;
+        border: 1px solid yellow;
       }
     }
   }
@@ -302,10 +333,11 @@ opacity: 3;
     color:white;
     background: black;
     border: 1px solid black;
+    margin-bottom: 40px;
   }
   .addCommentButton:hover{
     background:black;
-    color:lightgreen;
+    color:yellow;
   }
 
 
@@ -320,6 +352,7 @@ box-shadow: 5px 5px 20px black;
 background: rgba(50, 50, 50, .5);
 border-radius: 5px;
 left:300px;
+z-index: 1;
 
 .userImage{
   height: 75px;
@@ -357,14 +390,14 @@ left:300px;
     width: 100px;
     font-family: 'Baloo Bhaina', cursive;
     background: white;
-    color: lightgreen;
+    color: yellow;
     margin-left:175px;
     margin-top: 10px;
     border-radius: 10px;
   }
 
   button:hover{
-    background: lightgreen;
+    background: yellow;
     color:white;
   }
 

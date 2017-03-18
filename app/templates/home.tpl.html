@@ -22,9 +22,10 @@
 <div class = "postContainer">
 <div ng-repeat="post in posts">
     <div class="post">
+        <div class="userPhoto"><img src="{{post.profilePic}}"/></div>
         <div class="picture"><img src="{{post.photoUrl}}" /></div>
         <div class="whoPosted">
-          <b>@{{post.username}}</b>
+          <b>~{{post.username}}:</b>
           <span class = "description">{{post.description}}</span>
         </div>
          <!-- <div class="commentsContainer">
