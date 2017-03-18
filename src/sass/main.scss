@@ -2,6 +2,29 @@
   font-family: 'Lato', sans-serif;
 }
 
+#xButton{
+    button{
+    background: white;
+    color:black;
+    height: 10%;
+    width: 10%;
+    border-radius: 150px;
+    position: absolute;
+    left:50%;
+    top: 0%;
+    padding-bottom: 30px;
+    opacity: .3;
+    font-size: 100%;
+    border: 1px solid white;
+  }
+
+  button:hover{
+    color:red;
+    opacity: 1;
+    border: 1px solid red;
+  }
+}
+
 .postContainer{
   width: 90%;
   margin: auto;
