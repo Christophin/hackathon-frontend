@@ -29,7 +29,7 @@
     <div class="post">
         <div class="picture"><img src="{{post.photoUrl}}" /></div>
         <div class="whoPosted">
-          <b>@{{post.User.username}}:</b>
+          <a href= "templates/profile.tpl.html"><b>@{{post.User.username}}:</b></a>
           <span class = "description">{{post.description}}</span>
         </div>
         <a href="#!/home/{{ post.id }}/comment">
@@ -39,3 +39,15 @@
         </a>
     </div>
 </div>
+
+
+<!-- <div class = "profileHeader">
+  <div class = "profileAvatar"></div>
+  <div class = "profileUserName">@TylerLaurenceau879</div>
+</div>
+<div class = "profileGallery">
+  <div ng-repeat="post in posts">
+  <div class="galleryImage">
+    <img src="{{post.photoUrl}}" />
+  </div>
+</div> -->
