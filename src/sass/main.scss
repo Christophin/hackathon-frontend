@@ -22,11 +22,17 @@ body{
     padding-top: 100px;
     margin-bottom: 70px;
     text-shadow: 1px 1px 2px black;
+    font-family: 'Lato', sans-serif;
+
+    i{
+      color:lightgreen;
+    }
+
   }
 }
 
 .background{
-    background-image: url(../images/cityBackground.jpg);
+    background-image: url(../images/guy.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     width:100%;
@@ -75,6 +81,7 @@ body{
 
   button{
       margin-left: 100px;
+      background: rgba(50, 50, 50, .5);
   }
 }
 
@@ -85,31 +92,40 @@ body{
 .loginTitle{
   font-size: 25px;
   color:white;
-  font-family: 'Baloo Bhaina', cursive;
+  font-family: 'Lato', sans-serif;
   text-align: center;
+  margin-bottom: 10px;
 }
 
 .signUpTitle{
   font-size: 25px;
   color:white;
-  font-family: 'Baloo Bhaina', cursive;
+  font-family: 'Lato', sans-serif;
   text-align: center;
+  margin-bottom: 10px;
 }
 
 input{
   margin-bottom: 5px;
   border-radius: 5px;
-  border: 1px solid lightgrey;
+  border: 1px solid grey;
   padding-left: 5px;
   width: 250px;
 }
 
 button{
 border-radius: 5px;
-background: black;
+background: rgba(50, 50, 50, .5);
 color: white;
 border: 1px solid white;
 opacity: 3;
+font-family: 'Lato', sans-serif;
+padding: 10px;
+}
+
+button:hover{
+  background: lightgreen;
+  color:black;
 }
 
 
@@ -128,44 +144,68 @@ opacity: 3;
       font-family: 'Lato', sans-serif;
       width:50%;
       margin:auto;
-      margin-top: 30px;
+      padding-top: 30px;
       margin-bottom: 10px;
-      width: 10%
+      width: 10%;
+
+      a{
+        color:white;
+      }
     }
 
     .loginout{
       float:right;
       margin-top: 1%;
       margin-right: 2.5%;
+      font-family: 'Lato', sans-serif;
     }
   }
 
   .logo:hover{
 
     i{
-      color:yellow;
+      color:lightgreen;
     }
 
   }
 
     .loginout:hover{
-      color:yellow;
-      border: 1px solid yellow;
+      color:grey;
+      border: 1px solid grey;
     }
 
 .addAPhoto{
   position: fixed;
   top:15%;
   right:3%;
-  width: 4%;
+  width: 5%;
 }
 
 .addAPhoto:hover{
 
   button{
-    color:yellow;
-    border:1px solid yellow;
+    color:grey;
+    border:1px solid grey;
   }
+}
+.userPhotoContainer{
+  width: 100px;
+  height: 100px;
+  position: absolute;
+
+.userPhoto{
+  height: 90%;
+  width: 90%;
+  margin: auto;
+  margin-top: 20%;
+  border-radius:100px;
+
+  img{
+    width:100%;
+    height:100%;
+    border-radius: 100px;
+  }
+}
 }
 
 .post{
@@ -177,17 +217,7 @@ opacity: 3;
   margin-left: 10%;
   margin-bottom: 80px;
   padding-bottom: 10px;
-  border-radius: 5px;
   position: relative;
-
-  .userPhoto{
-    height: 13%;
-    width: 13%;
-    border:1px solid white;
-    position: absolute;
-    left:-14%;
-    top: 4%;
-  }
 
   .whoPosted{
     width:100%;
@@ -217,8 +247,6 @@ opacity: 3;
       img {
         width: 100%;
         height:100%;
-        border-top-left-radius: 5px;
-        border-top-right-radius: 5px;
       }
     }
 
@@ -262,17 +290,17 @@ opacity: 3;
       margin-top: 45px;
       margin-right: 20px;
       color:white;
-      background: yellow;
-      border: 1px solid yellow;
+      background: grey;
+      border: 1px solid grey;
       padding-right: 10px;
       border-top-left-radius: 0px;
       border-bottom-left-radius: 0px;
       }
 
       button:hover{
-        color:yellow;
+        color:grey;
         background: white;
-        border: 1px solid yellow;
+        border: 1px solid grey;
       }
     }
   }
@@ -288,6 +316,7 @@ opacity: 3;
     background: rgba(50, 50, 50, .5);
     border-radius: 10px;
     transition: all 3s ease-in-out;
+    z-index: 10;
 
     input{
       padding-left: 10px;
@@ -337,13 +366,13 @@ opacity: 3;
   }
   .addCommentButton:hover{
     background:black;
-    color:yellow;
+    color:grey;
   }
 
 
 .addPhotoContainer{
-height: 350px;
-width: 600px;
+height: 50%;
+width: 38%;
 margin: auto;
 margin-top: 20px;
 position: fixed;
@@ -351,18 +380,19 @@ text-shadow: 1px 1px 2px black;
 box-shadow: 5px 5px 20px black;
 background: rgba(50, 50, 50, .5);
 border-radius: 5px;
-left:300px;
+left:30%;
 z-index: 1;
 
-.userImage{
-  height: 75px;
-  width: 75px;
-  border: 1px solid white;
-  margin-left: 50px;
-  margin-top: 50px;
-  float:left;
-  border-radius: 100px;
-}
+
+// .userImage{
+//   height: 75px;
+//   width: 75px;
+//   border: 1px solid white;
+//   margin-left: 50px;
+//   margin-top: 50px;
+//   float:left;
+//   border-radius: 100px;
+// }
 
 .addPhotoUrl{
   width: 450px;
@@ -379,7 +409,7 @@ z-index: 1;
     margin-left: 70px;
     border-radius: 10px;
     border: 1px solid white;
-    font-family: 'Baloo Bhaina', cursive;
+    font-family: 'Lato', sans-serif;
     padding-left: 10px;
     color: black;
   }
@@ -388,16 +418,16 @@ z-index: 1;
     border: 1px solid white;
     height: 34px;
     width: 100px;
-    font-family: 'Baloo Bhaina', cursive;
+    font-family: 'Lato', sans-serif;
     background: white;
-    color: yellow;
+    color: grey;
     margin-left:175px;
     margin-top: 10px;
     border-radius: 10px;
   }
 
   button:hover{
-    background: yellow;
+    background: grey;
     color:white;
   }
 
@@ -410,7 +440,7 @@ z-index: 1;
   }
 
   textarea{
-    font-family: 'Baloo Bhaina', cursive;
+    font-family: 'Lato', sans-serif;
     margin-left: 50px;
     margin-top: 20px;
     border-radius: 10px;
@@ -418,4 +448,30 @@ z-index: 1;
     border: 1px solid white;
   }
 }
+}
+
+.profileHeader{
+  width:80%;
+  height:250px;
+  border: 1px solid white;
+  margin: auto;
+
+  .profileAvitar{
+    height:70%;
+    width:20%;
+    border:1px solid white;
+    margin: auto;
+    margin-top: 2%;
+    border-radius: 10px;
+  }
+
+  .profileUserName{
+    height:20%;
+    width:auto;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    color:white;
+    padding-top: 10px;
+    font-size: 120%;
+  }
 }
