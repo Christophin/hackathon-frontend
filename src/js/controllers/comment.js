@@ -1,4 +1,7 @@
 function CommentController ($scope, $http, SERVER, $state) {
+    $scope.killModal = function () {
+        $state.go('home');
+    };
     $scope.addComment = (data)  =>  {
         $http.post(`${SERVER}/photo/${$state.params.id}/comment`, data)
             .then(resp =>   {

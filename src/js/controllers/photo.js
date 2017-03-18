@@ -27,6 +27,9 @@ function PhotoController ($scope, $http, SERVER, $state, $rootScope, $cookies)  
     $scope.addComment = (data)  =>  {
         $http.post(`${SERVER}/photo/${$state.params.id}/comment`)
     };
+    $scope.killModal = function () {
+        $state.go('home');
+    };
     $scope.logOut = () => {
         $rootScope.loggedIn = false;
         $cookies.remove('access-token');
