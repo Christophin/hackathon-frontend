@@ -1,23 +1,23 @@
-
 <div class="modal">
-  <div class="modal-background" ng-click="killModal()"></div>
-  <div class="modal-content">
+    <div class="modal-background" ng-click="killModal()"></div>
+    <div class="modal-content">
 
-      <div class="addCommentsContainer">
-        <div class="addCommentsContainerTitle">
-          Comments
+        <div class="addCommentsContainer">
+            <div id="xButtonComments">
+                <button class="modal-close" ng-click="killModal()"><i class="fa fa-times" aria-hidden="true"></i></button>
+            </div>
+            <div class="addCommentsContainerTitle">
+                Comments
+            </div>
+            <div class="commentsContainer">
+                <div ng-repeat="comment in commentBox">
+                    <div class="comments">{{comment.User.username}}: {{ comment.content }}</div>
+                </div>
+            </div>
+            <form ng-submit="addComment(comment)">
+                <input type="text" placeholder="Say something!" ng-model="comment.content">
+                <button>POST <i class="fa fa-thumb-tack" aria-hidden="true"></i></button>
+            </form>
         </div>
-        <div class="commentsContainer">
-          <div ng-repeat="comment in commentBox">
-            <div class="comments">{{comment.User.username}}: {{ comment.content }}</div>
-          </div>
-        </div>
-        <form ng-submit="addComment(comment)">
-        <input type="text" placeholder="Say something!" ng-model="comment.content">
-        <button>POST! <i class="fa fa-thumb-tack" aria-hidden="true"></i></button>
-        </form>
-      </div>
-
-  </div>
-  <button class="modal-close" ng-click="killModal()"></button>
+    </div>
 </div>
