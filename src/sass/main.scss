@@ -6,6 +6,7 @@
   width: 1200px;
   margin: auto;
   border:1px solid white;
+  font-family: 'Baloo Bhaina', cursive;
 }
 
 body{
@@ -17,6 +18,14 @@ body{
 
 .loginContainer{
   overflow: hidden;
+
+  .loginScreenTitle{
+    font-size: 70px;
+    text-align: center;
+    color:white;
+    padding-top: 100px;
+    margin-bottom: 70px;
+  }
 }
 
 .background{
@@ -42,7 +51,6 @@ body{
   box-shadow: 5px 5px 20px black;
   background: rgba(50, 50, 50, .5);
   border-radius: 10px;
-  margin-top: 300px;
 
   button{
       margin-left: 100px;
@@ -67,7 +75,6 @@ body{
   box-shadow: 5px 5px 20px black;
   background: rgba(50, 50, 50, .5);
   border-radius: 10px;
-  margin-top: 300px;
 
   button{
       margin-left: 100px;
@@ -192,6 +199,9 @@ nav{
       margin-right: 10px;
       font-size: 18px;
     }
+    text-align: center;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
   }
 
     .picture{
@@ -232,6 +242,7 @@ nav{
 
     button{
       float:right;
+      margin-top: 45px;
       margin-right: 20px;
       color:white;
       background: lightgreen;
@@ -253,12 +264,15 @@ nav{
     width:500px;
     position:fixed;
     text-align: center;
+    padding-bottom: 10px;
+    left:350px;
+    position: absolute;
     text-shadow: 1px 1px 2px black;
     box-shadow: 5px 5px 20px black;
     background: rgba(50, 50, 50, .5);
-    border-radius: 20px;
-    padding-bottom: 10px;
-    left:350px;
+    border-radius: 10px;
+    transition: all 3s ease-in-out;
+
 
     .addCommentsContainerTitle{
       color:white;
