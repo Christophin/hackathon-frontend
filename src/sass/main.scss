@@ -22,11 +22,12 @@ body{
     padding-top: 100px;
     margin-bottom: 70px;
     text-shadow: 1px 1px 2px black;
+    font-family: 'Lato', sans-serif;
   }
 }
 
 .background{
-    background-image: url(../images/cityBackground.jpg);
+    background-image: url(../images/guy.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     width:100%;
@@ -85,21 +86,23 @@ body{
 .loginTitle{
   font-size: 25px;
   color:white;
-  font-family: 'Baloo Bhaina', cursive;
+  font-family: 'Lato', sans-serif;
   text-align: center;
+  margin-bottom: 10px;
 }
 
 .signUpTitle{
   font-size: 25px;
   color:white;
-  font-family: 'Baloo Bhaina', cursive;
+  font-family: 'Lato', sans-serif;
   text-align: center;
+  margin-bottom: 10px;
 }
 
 input{
   margin-bottom: 5px;
   border-radius: 5px;
-  border: 1px solid lightgrey;
+  border: 1px solid grey;
   padding-left: 5px;
   width: 250px;
 }
@@ -110,6 +113,8 @@ background: black;
 color: white;
 border: 1px solid white;
 opacity: 3;
+font-family: 'Lato', sans-serif;
+
 }
 
 
@@ -128,7 +133,7 @@ opacity: 3;
       font-family: 'Lato', sans-serif;
       width:50%;
       margin:auto;
-      margin-top: 30px;
+      padding-top: 30px;
       margin-bottom: 10px;
       width: 10%
     }
@@ -137,20 +142,21 @@ opacity: 3;
       float:right;
       margin-top: 1%;
       margin-right: 2.5%;
+      font-family: 'Lato', sans-serif;
     }
   }
 
   .logo:hover{
 
     i{
-      color:yellow;
+      color:grey;
     }
 
   }
 
     .loginout:hover{
-      color:yellow;
-      border: 1px solid yellow;
+      color:grey;
+      border: 1px solid grey;
     }
 
 .addAPhoto{
@@ -163,9 +169,23 @@ opacity: 3;
 .addAPhoto:hover{
 
   button{
-    color:yellow;
-    border:1px solid yellow;
+    color:grey;
+    border:1px solid grey;
   }
+}
+.userPhotoContainer{
+  width: 100px;
+  height: 100px;
+  position: absolute;
+
+.userPhoto{
+  height: 90%;
+  width: 90%;
+  border:1px solid white;
+  margin: auto;
+  margin-top: 10%;
+  border-radius:100px;
+}
 }
 
 .post{
@@ -177,17 +197,7 @@ opacity: 3;
   margin-left: 10%;
   margin-bottom: 80px;
   padding-bottom: 10px;
-  border-radius: 5px;
   position: relative;
-
-  .userPhoto{
-    height: 13%;
-    width: 13%;
-    border:1px solid white;
-    position: absolute;
-    left:-14%;
-    top: 4%;
-  }
 
   .whoPosted{
     width:100%;
@@ -217,8 +227,6 @@ opacity: 3;
       img {
         width: 100%;
         height:100%;
-        border-top-left-radius: 5px;
-        border-top-right-radius: 5px;
       }
     }
 
@@ -262,17 +270,17 @@ opacity: 3;
       margin-top: 45px;
       margin-right: 20px;
       color:white;
-      background: yellow;
-      border: 1px solid yellow;
+      background: grey;
+      border: 1px solid grey;
       padding-right: 10px;
       border-top-left-radius: 0px;
       border-bottom-left-radius: 0px;
       }
 
       button:hover{
-        color:yellow;
+        color:grey;
         background: white;
-        border: 1px solid yellow;
+        border: 1px solid grey;
       }
     }
   }
@@ -288,6 +296,7 @@ opacity: 3;
     background: rgba(50, 50, 50, .5);
     border-radius: 10px;
     transition: all 3s ease-in-out;
+    z-index: 10;
 
     input{
       padding-left: 10px;
@@ -337,7 +346,7 @@ opacity: 3;
   }
   .addCommentButton:hover{
     background:black;
-    color:yellow;
+    color:grey;
   }
 
 
@@ -354,15 +363,15 @@ border-radius: 5px;
 left:300px;
 z-index: 1;
 
-.userImage{
-  height: 75px;
-  width: 75px;
-  border: 1px solid white;
-  margin-left: 50px;
-  margin-top: 50px;
-  float:left;
-  border-radius: 100px;
-}
+// .userImage{
+//   height: 75px;
+//   width: 75px;
+//   border: 1px solid white;
+//   margin-left: 50px;
+//   margin-top: 50px;
+//   float:left;
+//   border-radius: 100px;
+// }
 
 .addPhotoUrl{
   width: 450px;
@@ -390,14 +399,14 @@ z-index: 1;
     width: 100px;
     font-family: 'Baloo Bhaina', cursive;
     background: white;
-    color: yellow;
+    color: grey;
     margin-left:175px;
     margin-top: 10px;
     border-radius: 10px;
   }
 
   button:hover{
-    background: yellow;
+    background: grey;
     color:white;
   }
 
