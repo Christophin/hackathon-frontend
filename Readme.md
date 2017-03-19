@@ -1,4 +1,2 @@
-<<<<<<< HEAD
-=======
-tiy-chriscoralli-hackathon-frontend.surge.sh
->>>>>>> 9387efaa4affc48c9a04a8c636ab48a0ed550213
+
+[Link To Live Demo](http:tiy-chriscoralli-hackathon-frontend.surge.sh)
