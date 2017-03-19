@@ -2,6 +2,7 @@ import SERVER from '../server'
 
 function UserController ($scope, $http, SERVER, $cookies, $state, $rootScope) {
     $scope.currentUser = [];
+    $scope.currentImage = '';
     function getUser (data) {
         $http.get(`${SERVER}/user/${data}`, data).then(resp    =>  {
             $scope.currentUser = resp.data;
@@ -34,6 +35,10 @@ function UserController ($scope, $http, SERVER, $cookies, $state, $rootScope) {
     $scope.addLike = (data) =>  {
         $http.post(`${SERVER}/photo/${parseInt(data)}/like`)
     };
+    $scope.setCurrentImage = (photo) =>  {
+        $scope.currentImage = photo.photoUrl;
+        console.log(photo.photoUrl)
+    }
 
 }
 

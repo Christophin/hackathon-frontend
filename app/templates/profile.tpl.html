@@ -9,14 +9,8 @@
   <a href = "#!/home"><i class="fa fa-hand-spock-o" aria-hidden="true"></a></i>iew
 </div>
 </nav>
-    <form class = "addAPhoto" ng-submit="viewAddPhoto()">
-      <button>
-          <i class="fa fa-plus" aria-hidden="true"></i>
-          <i class="fa fa-camera-retro" aria-hidden="true"></i>
-      </button>
-    </form>
 
-
+<div class="showImg" ui-view></div>
 <div class = "profileHeader">
   <img src = "{{currentUser.backgroundPic}}"/>
   <div class = "profileAvatar"><img src = "{{currentUser.profilePic}}"/></div>
@@ -24,7 +18,7 @@
 </div>
 <div class = "profileGallery">
     <div ng-repeat="photo in currentUser.Photos">
-        <div class="galleryImage" ng-dblclick="addLike(photo.id)">
+        <div class="galleryImage" ng-click="setCurrentImage(photo)">
             <a href="#!/profile/{{ currentUser.id }}/image/{{ photo.id }}">
                 <img ng-src="{{photo.photoUrl}}" />
             </a>
