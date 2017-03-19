@@ -5,8 +5,8 @@
 
 #xButtonPhotos{
     button{
-    background: white;
-    color:black;
+    background: rgba(50, 50, 50, .5);
+    color:lightgreen;
     height: 8%;
     width: 9%;
     border-radius: 150px;
@@ -16,13 +16,13 @@
     padding-bottom: 30px;
     opacity: .3;
     font-size: 100%;
-    border: 1px solid white;
+    border: 1px solid lightgreen;
   }
 
   button:hover{
-    color:red;
+    color:#FF5959;
     opacity: 1;
-    border: 1px solid red;
+    border: 1px solid #FF5959;
   }
 }
 
@@ -36,10 +36,10 @@
     font-size: 100%;
     bottom:90%;
     left:90%;
-    color:black;
-    background: white;
+    color:lightgreen;
+    background: rgba(50, 50, 50, .5);
     opacity: .3;
-    border: 1px solid white;
+    border: 1px solid lightgreen;
   }
 
   button:hover{
@@ -57,6 +57,10 @@
 
 body{
   background:black;
+  -webkit-user-select: none;
+     -moz-user-select: -moz-none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .loginContainer{
@@ -200,6 +204,10 @@ button:hover{
       a{
         color:white;
       }
+
+      i:hover{
+        color:lightgreen;
+      }
     }
 
     .loginout{
@@ -211,16 +219,20 @@ button:hover{
     }
   }
 
-  .logo:hover{
-
-    i{
+    .loginout:hover{
       color:lightgreen;
     }
 
-  }
+    .logout{
+      float:right;
+      margin-top: 1%;
+      margin-right: 2.5%;
+      font-family: 'Lato', sans-serif;
+      border: 1px solid black;
+    }
 
-    .loginout:hover{
-      color:lightgreen;
+    .logout:hover{
+      color:#FF5959;
     }
 
 .addAPhoto{
@@ -238,13 +250,13 @@ button:hover{
   }
 }
 .userPhotoContainer{
-  width: 100px;
-  height: 100px;
+  width: 8%;
+  height: 14%;
   position: absolute;
 
 .userPhoto{
-  height: 90%;
-  width: 90%;
+  height: 100%;
+  width: 100%;
   margin: auto;
   margin-top: 20%;
   border-radius:100px;
@@ -458,8 +470,8 @@ z-index: 1;
   border-radius: 5px;
 
   input{
-    width: 300px;
-    height: 30px;
+    width: 65%;
+    height: 15%;
     margin-top: 25px;
     margin-left: 70px;
     border-radius: 10px;
