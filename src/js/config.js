@@ -26,6 +26,11 @@ function Config ($stateProvider, $urlRouterProvider) {
           templateUrl: 'templates/profile.tpl.html',
           controller: 'UserController'
         })
+        .state('profile.img',   {
+            url: '/image/:imgId',
+            templateUrl: 'templates/image.tpl.html',
+            controller: 'UserController'
+        })
         .state('page-not-found', {
             url: '/not-found',
             template: `<h2>Wrong Turn.</h2>`
