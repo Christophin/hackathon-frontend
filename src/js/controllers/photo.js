@@ -31,7 +31,7 @@ function PhotoController ($scope, $http, SERVER, $state, $rootScope, $cookies)  
         $state.go('home');
     };
     $scope.addLike = (data) =>  {
-
+        $http.post(`${SERVER}/photo/${parseInt(data)}/like`)
     };
     $scope.logOut = () => {
         $rootScope.loggedIn = false;
