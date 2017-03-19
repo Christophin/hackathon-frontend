@@ -1,7 +1,7 @@
 <div class = "singlePictureContainerBackground">
 <div class = "singlePictureContainer">
-  <div class = "singlePicture">
-    <img ng-src = "{{}}"/>
+  <div class = "singlePicture" ng-dblclick="addLike(post.id)">
+    <img ng-src = "{{ currentImage }}"/>
   </div>
   <div class = "singlePictureComment">
     <div class = "singlePictureCommentTitle">Comments</div>

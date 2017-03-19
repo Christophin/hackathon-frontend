@@ -10,6 +10,7 @@
 </div>
 </nav>
 
+<div class="showImg" ui-view></div>
 <div class = "profileHeader">
   <img src = "{{currentUser.backgroundPic}}"/>
   <div class = "profileAvatar"><img src = "{{currentUser.profilePic}}"/></div>
@@ -19,8 +20,11 @@
 <div class="singlePicture-modal" ui-view></div>
 
 <div class = "profileGallery">
-  <div ng-repeat="photo in currentUser.Photos">
-     <div class="galleryImage" ng-dblclick="addLike(photo.id)">
-         <a href="#!/profile/{{ currentUser.id }}/image/{{ photo.id }}">
-  </div>
+    <div ng-repeat="photo in currentUser.Photos">
+        <div class="galleryImage" ng-click="setCurrentImage(photo)">
+            <a href="#!/profile/{{ currentUser.id }}/image/{{ photo.id }}">
+                <img ng-src="{{photo.photoUrl}}" />
+            </a>
+        </div>
+    </div>
 </div>
