@@ -22,6 +22,9 @@
   <div class = "profileAvatar"><img src = "{{currentUser.profilePic}}"/></div>
   <div class = "profileUserName">{{currentUser.username}}</div>
 </div>
+
+<div class="singlePicture-modal" ui-view></div>
+
 <div class = "profileGallery">
   <div ng-repeat="photo in currentUser.Photos">
   <div class="galleryImage">
