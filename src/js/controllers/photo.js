@@ -4,7 +4,8 @@ function PhotoController ($scope, $http, SERVER, $state, $rootScope, $cookies)  
     $scope.posts = [];
     function init() {
         $http.get(`${SERVER}/photos`).then(resp => {
-            $scope.posts = resp.data
+            $scope.posts = resp.data;
+            console.log(resp.data)
         })
     }
     init();
