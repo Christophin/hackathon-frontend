@@ -1,9 +1,9 @@
     <nav class = "top">
       <form ng-submit="logOut()">
-        <button class = "logout">Log-Out <i class="fa fa-user-circle-o" aria-hidden="true"></i></button>
+        <button class = "logout" ng-show="loggedIn">Log-Out <i class="fa fa-user-circle-o" aria-hidden="true"></i></button>
       </form>
       <form ng-submit="logIn()">
-        <button class = "loginout">Log-In <i class="fa fa-user-circle" aria-hidden="true"></i></button>
+        <button class = "loginout" ng-hide="loggedIn">Log-In <i class="fa fa-user-circle" aria-hidden="true"></i></button>
       </form>
       <div class = "logo">
       <a href = "#!/home"><i class="fa fa-hand-spock-o" aria-hidden="true"></a></i>iew

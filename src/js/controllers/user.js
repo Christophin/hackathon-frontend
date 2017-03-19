@@ -1,6 +1,6 @@
 import SERVER from '../server'
 
-function UserController ($scope, $http, SERVER, $cookies, $state) {
+function UserController ($scope, $http, SERVER, $cookies, $state, $rootScope) {
     $scope.currentUser = [];
     function getUser (data) {
         $http.get(`${SERVER}/user/${data}`, data).then(resp    =>  {
@@ -21,6 +21,7 @@ function UserController ($scope, $http, SERVER, $cookies, $state) {
     $scope.login = (data)   =>  {
         console.log(data);
       $http.post(`${SERVER}/login`, data).then(resp =>  {
+          $rootScope.loggedIn = true;
           $cookies.put('access-token', resp.data.token);
           $http.defaults.headers.common['access-token'] = resp.data.token;
           $state.go('home');
@@ -33,6 +34,6 @@ function UserController ($scope, $http, SERVER, $cookies, $state) {
 
 }
 
-UserController.$inject = ['$scope', '$http', 'SERVER', '$cookies', '$state' ];
+UserController.$inject = ['$scope', '$http', 'SERVER', '$cookies', '$state', '$rootScope' ];
 
 export default UserController;

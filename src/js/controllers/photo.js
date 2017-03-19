@@ -40,7 +40,7 @@ function PhotoController ($scope, $http, SERVER, $state, $rootScope, $cookies)  
         $state.go('login');
     };
     $scope.logIn =  ()  =>  {
-        $state.go('login')
+        $state.go('login');
     }
 }
 
