@@ -594,12 +594,13 @@ z-index: 1;
   z-index: 1000;
   top:0px;
   left:0px;
+  overflow: auto;
 }
 .singlePictureContainer{
   width: 80%;
   height:525px;
   margin: auto;
-  margin-top: 5%;
+  margin-top: 8%;
 
   .singlePicture{
     height:100%;
@@ -611,3 +612,39 @@ z-index: 1;
     }
   }
 }
+
+.singlePictureComment{
+  width:100%;
+  height:500px;
+
+  .singlePictureCommentTitle{
+    color:white;
+    font-family: 'Baloo Bhaina', cursive;
+    font-size: 160%;
+    text-align: center;
+  }
+
+  .comments{
+    color:white;
+    font-size: 100%;
+  }
+
+    input{
+      padding-left: 2%;
+      border-top-right-radius: 0px;
+      border-bottom-right-radius: 0px;
+      margin-left: 25%;
+      height:39px;
+      border:1px solid white;
+      width:40%;
+    }
+
+    button{
+      border-top-left-radius: 0px;
+      border-bottom-left-radius: 0px;
+      margin-left: -3px;
+      height:43px;
+      background: rgba(50, 50, 50, .5);
+    }
+
+  }
