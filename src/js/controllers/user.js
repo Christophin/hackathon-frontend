@@ -19,6 +19,9 @@ function UserController ($scope, $http, SERVER, $cookies, $state, $rootScope) {
                 console.log(error)
             })
     };
+    $scope.killModal = function () {
+        $state.go('home');
+    };
     $scope.login = (data)   =>  {
         console.log(data);
       $http.post(`${SERVER}/login`, data).then(resp =>  {
