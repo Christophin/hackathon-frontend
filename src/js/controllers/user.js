@@ -31,6 +31,9 @@ function UserController ($scope, $http, SERVER, $cookies, $state, $rootScope) {
               console.log(error);
           })
     };
+    $scope.addLike = (data) =>  {
+        $http.post(`${SERVER}/photo/${parseInt(data)}/like`)
+    };
 
 }
 
