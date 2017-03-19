@@ -1,6 +1,7 @@
 *{
   font-family: 'Lato', sans-serif;
   button:focus {outline:0;}
+  cursor:pointer;
 }
 
 #xButtonPhotos{
@@ -17,12 +18,30 @@
     opacity: .3;
     font-size: 100%;
     border: 1px solid lightgreen;
+    cursor:pointer;
   }
 
   button:hover{
     color:#FF5959;
     opacity: 1;
     border: 1px solid #FF5959;
+  }
+}
+
+.likes{
+  float:right;
+  margin-right: 1;
+  color:white;
+  cursor:pointer;
+
+  i{
+    color:pink;
+  }
+}
+
+.likes:hover{
+  i{
+    color:lightgreen;
   }
 }
 
@@ -40,6 +59,7 @@
     background: rgba(50, 50, 50, .5);
     opacity: .3;
     border: 1px solid lightgreen;
+    cursor:pointer;
   }
 
   button:hover{
@@ -73,7 +93,7 @@ body{
     padding-top: 100px;
     margin-bottom: 70px;
     text-shadow: 1px 1px 2px black;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Baloo Bhaina', cursive;
 
     i{
       color:lightgreen;
@@ -87,7 +107,8 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     width:100%;
-    height: 750px;
+    height: 100%;
+    position: fixed;
 }
 
 
@@ -110,6 +131,7 @@ body{
       margin-left: 100px;
       background: rgba(50, 50, 50, .5);
       padding-bottom: 15px;
+      cursor:pointer;
   }
 }
 
@@ -136,6 +158,7 @@ body{
       margin-left: 100px;
       background: rgba(50, 50, 50, .5);
       padding-bottom: 15px;
+      cursor:pointer;
   }
 }
 
@@ -146,17 +169,15 @@ body{
 .loginTitle{
   font-size: 25px;
   color:white;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Baloo Bhaina', cursive;
   text-align: center;
-  margin-bottom: 10px;
 }
 
 .signUpTitle{
   font-size: 25px;
   color:white;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Baloo Bhaina', cursive;
   text-align: center;
-  margin-bottom: 10px;
 }
 
 input{
@@ -175,6 +196,7 @@ border: 1px solid white;
 opacity: 3;
 font-family: 'Lato', sans-serif;
 padding: 10px;
+cursor:pointer;
 }
 
 button:hover{
@@ -194,7 +216,7 @@ button:hover{
       text-align:center;
       font-size: 250%;
       color:white;
-      font-family: 'Lato', sans-serif;
+      font-family: 'Baloo Bhaina', cursive;
       width:50%;
       margin:auto;
       padding-top: 30px;
@@ -207,6 +229,7 @@ button:hover{
 
       i:hover{
         color:lightgreen;
+        cursor:pointer;
       }
     }
 
@@ -221,6 +244,7 @@ button:hover{
 
     .loginout:hover{
       color:lightgreen;
+      cursor:pointer;
     }
 
     .logout{
@@ -233,6 +257,7 @@ button:hover{
 
     .logout:hover{
       color:#FF5959;
+      cursor:pointer;
     }
 
 .addAPhoto{
@@ -247,6 +272,7 @@ button:hover{
   button{
     color:lightgreen;
     border:1px solid lightgreen;
+    cursor:pointer;
   }
 }
 .userPhotoContainer{
@@ -280,12 +306,9 @@ button:hover{
   padding-bottom: 10px;
   position: relative;
 
-  .likes  {
-    color: white;
-  }
 
   .whoPosted{
-    width:100%;
+    width:80%;
     font-family: 'Lato', sans-serif;
     padding-left: 10px;
     margin-top: 5px;
@@ -422,7 +445,7 @@ button:hover{
 }
 
 .addCommentButton{
-    width: 26px;
+    width: 3%;
     height:20px;
     text-align: center;
     font-family: 'Baloo Bhaina', cursive;
@@ -433,7 +456,7 @@ button:hover{
     color:white;
     background: black;
     border: 1px solid black;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
   }
   .addCommentButton:hover{
     background:black;
