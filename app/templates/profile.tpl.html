@@ -1,14 +1,30 @@
+<nav class = "top">
+  <form ng-submit="logOut()">
+    <button class = "logout">Log-Out <i class="fa fa-user-circle-o" aria-hidden="true"></i></button>
+  </form>
+  <form ng-submit="logIn()">
+    <button class = "loginout">Log-In <i class="fa fa-user-circle" aria-hidden="true"></i></button>
+  </form>
+  <div class = "logo">
+  <a href = "#!/home"><i class="fa fa-hand-spock-o" aria-hidden="true"></a></i>iew
+</div>
+</nav>
+    <form class = "addAPhoto" ng-submit="viewAddPhoto()">
+      <button>
+          <i class="fa fa-plus" aria-hidden="true"></i>
+          <i class="fa fa-camera-retro" aria-hidden="true"></i>
+      </button>
+    </form>
+
+
 <div class = "profileHeader">
-    <img ng-src = "{{currentUser.backgroundPic}}"/>
-    <div class = "profileAvatar"><img src = "{{currentUser.profilePic}}"/></div>
-    <div class = "profileUserName">{{currentUser.userName}}</div>
+  <img src = "{{currentUser.backgroundPic}}"/>
+  <div class = "profileAvatar"><img src = "{{currentUser.profilePic}}"/></div>
+  <div class = "profileUserName">{{currentUser.username}}</div>
 </div>
 <div class = "profileGallery">
-    <div ng-repeat="photo in currentUser.Photos">
-        <div class="galleryImage">
-            <a href="#!/profile/{{ currentUser.id }}/image/{{ photo.id }}">
-                <img ng-src="{{photo.photoUrl}}" />
-            </a>
-        </div>
-    </div>
+  <div ng-repeat="photo in currentUser.Photos">
+  <div class="galleryImage">
+    <img src="{{photo.photoUrl}}"/>
+  </div>
 </div>
