@@ -467,19 +467,19 @@ z-index: 1;
 
   button{
     border: 1px solid white;
-    height: 34px;
-    width: 100px;
+    height: 10%;
+    width: 20%;
     font-family: 'Lato', sans-serif;
-    background: white;
-    color: grey;
-    margin-left:175px;
+    color: white;
+    background: rgba(50, 50, 50, .5);
+    margin-left:40%;
     margin-top: 10px;
     border-radius: 10px;
   }
 
   button:hover{
-    background: grey;
-    color:white;
+    background: lightgreen;
+    color:black;
   }
 
   .addPhotoTitle{
