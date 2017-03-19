@@ -6,6 +6,9 @@
 <div class = "profileGallery">
   <div ng-repeat="photo in currentUser.Photos">
   <div class="galleryImage">
-    <img ng-src="{{photo.photoUrl}}" />
+      <a href="#!/profile/{{ currentUser.id }}/image/{{ photo.id }}">
+        <img ng-src="{{photo.photoUrl}}" />
+      </a>
   </div>
+</div>
 </div>
