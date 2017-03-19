@@ -1,0 +1,21 @@
+<div class = "singlePictureContainerBackground">
+<div class = "singlePictureContainer">
+  <div class = "singlePicture">
+    <img src = "https://images8.alphacoders.com/475/thumb-1920-475573.jpg"/>
+  </div>
+  <div class = "singlePictureComment">
+    <div class = "singlePictureCommentTitle">Comments</div>
+    <div class="commentsContainer">
+      <div class = "whereTheCommentsAppear">
+        <div ng-repeat="comment in commentBox">
+            <div class="comments">@{{comment.User.username}}: {{ comment.content }}</div>
+          </div>
+        </div>
+        <form ng-submit="addComment(comment)">
+            <input type="text" placeholder="Say something!" ng-model="comment.content">
+            <button>POST <i class="fa fa-thumb-tack" aria-hidden="true"></i></button>
+        </form>
+    </div>
+  </div>
+</div>
+</div>
