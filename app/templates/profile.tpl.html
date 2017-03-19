@@ -1,11 +1,11 @@
 <div class = "profileHeader">
-  <img src = "{{currentUser.backgroundPic}}"/>
+  <img ng-src = "{{currentUser.backgroundPic}}"/>
   <div class = "profileAvatar"><img src = "{{currentUser.profilePic}}"/></div>
   <div class = "profileUserName">{{currentUser.userName}}</div>
 </div>
 <div class = "profileGallery">
-  <div ng-repeat="post in posts">
+  <div ng-repeat="photo in currentUser.Photos">
   <div class="galleryImage">
-    <img src="{{currentUser.photoUrl}}" />
+    <img ng-src="{{photo.photoUrl}}" />
   </div>
 </div>
