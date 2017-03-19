@@ -5,7 +5,7 @@
 </div>
 <div class = "profileGallery">
     <div ng-repeat="photo in currentUser.Photos">
-        <div class="galleryImage">
+        <div class="galleryImage" ng-dblclick="addLike(photo.id)">
             <a href="#!/profile/{{ currentUser.id }}/image/{{ photo.id }}">
                 <img ng-src="{{photo.photoUrl}}" />
             </a>
