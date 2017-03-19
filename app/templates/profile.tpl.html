@@ -23,8 +23,11 @@
   <div class = "profileUserName">{{currentUser.username}}</div>
 </div>
 <div class = "profileGallery">
-  <div ng-repeat="photo in currentUser.Photos">
-  <div class="galleryImage">
-    <img src="{{photo.photoUrl}}"/>
-  </div>
+    <div ng-repeat="photo in currentUser.Photos">
+        <div class="galleryImage" ng-dblclick="addLike(photo.id)">
+            <a href="#!/profile/{{ currentUser.id }}/image/{{ photo.id }}">
+                <img ng-src="{{photo.photoUrl}}" />
+            </a>
+        </div>
+    </div>
 </div>

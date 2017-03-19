@@ -28,7 +28,7 @@
         </a>
     </div>
   </div>
-    <div class="post" ng-dblclick="addLike()">
+    <div class="post" ng-dblclick="addLike(post.id)">
         <div class="picture"><img ng-src="{{post.photoUrl}}" /></div>
         <div class="whoPosted">
           <a href= "#!/profile/{{ post.User.id }}"><b>@{{post.User.username}}:</b></a>
