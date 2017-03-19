@@ -19,6 +19,8 @@ function CommentController ($scope, $http, SERVER, $state) {
     }
 }
 
+
+
 CommentController.$inject = ['$scope', '$http', 'SERVER', '$state' ];
 
 export default CommentController;

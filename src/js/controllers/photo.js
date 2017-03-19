@@ -4,7 +4,8 @@ function PhotoController ($scope, $http, SERVER, $state, $rootScope, $cookies)  
     $scope.posts = [];
     function init() {
         $http.get(`${SERVER}/photos`).then(resp => {
-            $scope.posts = resp.data
+            $scope.posts = resp.data;
+            console.log(resp.data)
         })
     }
     init();
@@ -13,7 +14,6 @@ function PhotoController ($scope, $http, SERVER, $state, $rootScope, $cookies)  
             $scope.posts = resp.data;
             $state.go()
         })
-
     };
     $scope.addPhoto = (data)    =>  {
         console.log(data);
@@ -29,6 +29,9 @@ function PhotoController ($scope, $http, SERVER, $state, $rootScope, $cookies)  
     };
     $scope.killModal = function () {
         $state.go('home');
+    };
+    $scope.addLike = (data) =>  {
+
     };
     $scope.logOut = () => {
         $rootScope.loggedIn = false;
